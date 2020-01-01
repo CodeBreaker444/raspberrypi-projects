@@ -1,4 +1,4 @@
-# Rasberry Pi Projects(Basic to Advanced) ![](https://travis-ci.org/CodeBreaker444/api-merger-for-multipage-json-data-python.svg?branch=master)
+# Rasberry Pi Projects(Basic to Advanced)
 ## Device:
 - Rasberry pi 3 Model B v1.2
 ## Contents:

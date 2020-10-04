@@ -1,10 +1,11 @@
-# Rasberry Pi Projects(Basic to Advanced)
+# Raspberry Pi Projects(Basic to Advanced)
 ## Device:
 - Rasberry pi 3 Model B v1.2
 ## Contents:
 1. [Rasberry pi circuit diagrams.](https://github.com/CodeBreaker444/rasberrypi-projects/tree/master/rasberry-pi-connection-diagrams)
 2. [Robot basecode.](https://github.com/CodeBreaker444/rasberrypi-projects/tree/master/robot-basecode)
 4. [Morse code implementation with led.](https://github.com/CodeBreaker444/rasberrypi-projects/tree/master/morse-code-blinking-led)
+5. [Visual Studio Code Server, Coding in IPAD](https://github.com/CodeBreaker444/rasberrypi-projects/tree/master/vscoding-server)
 
 
 ## Images:

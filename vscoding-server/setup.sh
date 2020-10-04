@@ -32,12 +32,15 @@ else
 fi
 echo -e -n "Enter Telegram Bot Token: "
 read token
+echo -e -n "Enter Chat ID of the bot"
+read chatid
+export CHAT_ID=$chatid
 export TELEGRAM_BOT_TOKEN=$token
-echo -e "export TELEGRAM_BOT_TOKEN=$token " >> /etc/profile
+echo -e "export TELEGRAM_BOT_TOKEN=$token CHAT_ID=$chatid " >> /etc/profile
 echo -e "Copying Files to /lib/systemd/system/ "
 cp reverse* /lib/systemd/system/
 cp code-server* /lib/systemd/system/
-touch /lib/systemd/system/ngrok.txt
+touch /lib/systemd/system/output.txt
 echo -e "${G}Done copying! "
 echo -e "Enabling Code-Server, Reverse-SSH Services "
 systemctl daemon-reload

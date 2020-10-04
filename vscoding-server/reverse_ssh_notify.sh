@@ -6,7 +6,7 @@ if [ $MESSAGE -eq "" ]; then
 MESSAGE="Not_Assigned_URL"
 fi
 echo $MESSAGE
-C_ID="717629783"
+C_ID=$CHAT_ID
 TOKEN=$TELEGRAM_BOT_TOKEN
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 curl -s -X POST $URL -d chat_id=$C_ID -d text="$MESSAGE"

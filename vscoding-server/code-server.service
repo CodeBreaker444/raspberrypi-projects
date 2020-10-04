@@ -1,0 +1,13 @@
+[Unit]
+Description=code-server
+Documentation=https://example.com
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/code-server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

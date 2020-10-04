@@ -1,0 +1,17 @@
+[Unit]
+Description=reverse-ssh
+Documentation=https://example.com
+After=network-online.target sshd.service
+Requires=network-online.target sshd.service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=bash -c 'kill $(pidof ngrok); /bin/ngrok http 8080 --log=stdout | tee /lib/systemd/system/output.txt &'
+ExecStartPre=/bin/sh -c 'until ping -c1 google.com; do sleep 1; done;'
+ExecStartPost=/bin/sh -c 'sleep 3'
+ExecStartPost=/lib/systemd/system/reverse_ssh_notify.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
